@@ -60,7 +60,5 @@ class ViewController: UIViewController {
         print(sizePickerView.values)
         print(sizePickerView.isValidContent)
     }
-    
-    
 }
 

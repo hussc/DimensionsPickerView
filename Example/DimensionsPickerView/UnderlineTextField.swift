@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable class UnderlineTextField: UITextField {
     
     fileprivate var insets: UIEdgeInsets {
-        .init(top: 0, left: 0, bottom: -underlineHeight, right: 0)
+        .init(top: 0, left: 0, bottom: underlineHeight, right: 0)
     }
     
     var underlineHeight: CGFloat = 0 {
