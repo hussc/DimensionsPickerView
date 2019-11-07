@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/DimensionsPickerView.svg?style=flat)](https://cocoapods.org/pods/DimensionsPickerView)
 [![Platform](https://img.shields.io/cocoapods/p/DimensionsPickerView.svg?style=flat)](https://cocoapods.org/pods/DimensionsPickerView)
 
+![dimensions-picker](Header.jpg)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
