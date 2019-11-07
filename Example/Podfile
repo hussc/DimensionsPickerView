@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DimensionsPickerView_Example' do
+  pod 'DimensionsPickerView', :path => '../'
+
+  target 'DimensionsPickerView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
