@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A3940373AEEF7C345929AA94822C33B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		341C9EE2327538EEA719409F98917D41 /* DimensionsPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 262C681D8F5F1BAE6FC46A0E7DC4742C /* DimensionsPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		457331B5CC2CCE0676CF4EC067EE87B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		609142543F4B783ECC2BC2A8E0CBB3AC /* Pods-DimensionsPickerView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D258D613B06B450A0EF9AC38467F18 /* Pods-DimensionsPickerView_Tests-dummy.m */; };
+		64C381C90233959F8255FD2FBD3D500D /* Pods-DimensionsPickerView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C38B5FCC8A4905556975BCB0A7E605ED /* Pods-DimensionsPickerView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		674BA195D7BC5F4AFC00AE63A5A661EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8D6AA6C06419B4DDDCA6C2747FCC756E /* Pods-DimensionsPickerView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67EDAA4394DCDBC30783AA800DEA725C /* Pods-DimensionsPickerView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ABA999A45897F12F44DA1734E2355F6 /* Pods-DimensionsPickerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BFEAFFF411C404ECB703E77340EC5 /* Pods-DimensionsPickerView_Example-dummy.m */; };
+		BD48318DD39D798D35B82C2564C00FF9 /* DimensionsPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7D4095759D6F4D0BC246473AC6A07 /* DimensionsPickerView-dummy.m */; };
+		E40F3D1B2374116E00E38EC3 /* DimensionsPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40F3D1A2374116E00E38EC3 /* DimensionsPickerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE12310B0EE044E2A72C96513F1C8076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15BE4E41423CD02786EF3A66F4B3ACE1;
+			remoteInfo = DimensionsPickerView;
+		};
+		EA1F9B08F909D6945BF67EF74C182E95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8804CB04A53BDBF840BDB398F4D36675;
+			remoteInfo = "Pods-DimensionsPickerView_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E516285F94BD9862B8F5CC8B5D5073D /* Pods-DimensionsPickerView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DimensionsPickerView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0FFA089A27FB25879AE675190F4547A6 /* DimensionsPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DimensionsPickerView-prefix.pch"; sourceTree = "<group>"; };
+		262C681D8F5F1BAE6FC46A0E7DC4742C /* DimensionsPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DimensionsPickerView-umbrella.h"; sourceTree = "<group>"; };
+		26B9695452A40D8A0E622A2CD8F50512 /* Pods-DimensionsPickerView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DimensionsPickerView_Tests.modulemap"; sourceTree = "<group>"; };
+		2EC7D4095759D6F4D0BC246473AC6A07 /* DimensionsPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DimensionsPickerView-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		321A53B80F047AE93795574C666B4B20 /* Pods-DimensionsPickerView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DimensionsPickerView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		362BDF61B163B393367CD7492231B337 /* Pods-DimensionsPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DimensionsPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3A6EBDDBE7CD5154D05FCF6708928095 /* Pods_DimensionsPickerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DimensionsPickerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC08BF29438BF3520CFDAF3CE73BBA4 /* Pods-DimensionsPickerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DimensionsPickerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		473582B3F4AD345DC866DBFD1F7D5FB5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		59A4ABD121B8B7E37B6AD539EEA488DA /* DimensionsPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DimensionsPickerView.xcconfig; sourceTree = "<group>"; };
+		5BDC8497BDA3DB333387F48FB5CFF264 /* Pods-DimensionsPickerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DimensionsPickerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5D4A696FFFC2099CD521E4BAA6F950A3 /* DimensionsPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DimensionsPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DAA621E092711E5DA8DD52C9C53C26F /* Pods-DimensionsPickerView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DimensionsPickerView_Tests-Info.plist"; sourceTree = "<group>"; };
+		6663B86440FA5802F00E0EE1CB17096A /* DimensionsPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DimensionsPickerView.modulemap; sourceTree = "<group>"; };
+		67EDAA4394DCDBC30783AA800DEA725C /* Pods-DimensionsPickerView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DimensionsPickerView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		733315D19B55E688372D57CDD9982A35 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A28BFEAFFF411C404ECB703E77340EC5 /* Pods-DimensionsPickerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DimensionsPickerView_Example-dummy.m"; sourceTree = "<group>"; };
+		A502B78C1038F09C4CB9C6411D8021FB /* Pods-DimensionsPickerView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DimensionsPickerView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BACF79D77C8C5BF5A44DD66B538FD35C /* Pods-DimensionsPickerView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DimensionsPickerView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C38B5FCC8A4905556975BCB0A7E605ED /* Pods-DimensionsPickerView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DimensionsPickerView_Example-umbrella.h"; sourceTree = "<group>"; };
+		C4DFFB309B19C2F1664D75D456B94742 /* Pods-DimensionsPickerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DimensionsPickerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D531B161916C02C45FF4F061F1E3000C /* Pods-DimensionsPickerView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DimensionsPickerView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D5D4484DC0304330555C475BE6172D57 /* Pods_DimensionsPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DimensionsPickerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D618D83E6C8911683A10794697672012 /* Pods-DimensionsPickerView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DimensionsPickerView_Example.modulemap"; sourceTree = "<group>"; };
+		D95C349C49A4AE537CD000DD0E877DAE /* DimensionsPickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DimensionsPickerView-Info.plist"; sourceTree = "<group>"; };
+		E3D8BCDC7065F2BB51A14EA352E34BC8 /* DimensionsPickerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DimensionsPickerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E40F3D1A2374116E00E38EC3 /* DimensionsPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DimensionsPickerView.swift; path = DimensionsPickerView/Classes/DimensionsPickerView.swift; sourceTree = "<group>"; };
+		F5D258D613B06B450A0EF9AC38467F18 /* Pods-DimensionsPickerView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DimensionsPickerView_Tests-dummy.m"; sourceTree = "<group>"; };
+		FE82F6B84D0F0FAA2E26044B181BE19D /* Pods-DimensionsPickerView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DimensionsPickerView_Example-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB297F61AB0C98211E56FEBC28D79F8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3940373AEEF7C345929AA94822C33B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC9CFCE7D6C0A50DD5555BBA4C44A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674BA195D7BC5F4AFC00AE63A5A661EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD588A5270BA7A9AD1915487FA9F06D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457331B5CC2CCE0676CF4EC067EE87B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ABF464FA0FABEEC1A6BFA7A915F4AB9 /* Pods-DimensionsPickerView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				26B9695452A40D8A0E622A2CD8F50512 /* Pods-DimensionsPickerView_Tests.modulemap */,
+				321A53B80F047AE93795574C666B4B20 /* Pods-DimensionsPickerView_Tests-acknowledgements.markdown */,
+				0E516285F94BD9862B8F5CC8B5D5073D /* Pods-DimensionsPickerView_Tests-acknowledgements.plist */,
+				F5D258D613B06B450A0EF9AC38467F18 /* Pods-DimensionsPickerView_Tests-dummy.m */,
+				5DAA621E092711E5DA8DD52C9C53C26F /* Pods-DimensionsPickerView_Tests-Info.plist */,
+				67EDAA4394DCDBC30783AA800DEA725C /* Pods-DimensionsPickerView_Tests-umbrella.h */,
+				3EC08BF29438BF3520CFDAF3CE73BBA4 /* Pods-DimensionsPickerView_Tests.debug.xcconfig */,
+				5BDC8497BDA3DB333387F48FB5CFF264 /* Pods-DimensionsPickerView_Tests.release.xcconfig */,
+			);
+			name = "Pods-DimensionsPickerView_Tests";
+			path = "Target Support Files/Pods-DimensionsPickerView_Tests";
+			sourceTree = "<group>";
+		};
+		23874798560936D4EE5688F70669D963 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E3D8BCDC7065F2BB51A14EA352E34BC8 /* DimensionsPickerView.podspec */,
+				473582B3F4AD345DC866DBFD1F7D5FB5 /* LICENSE */,
+				733315D19B55E688372D57CDD9982A35 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		25F59A4E70DF39E57CE3424625B23905 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D4A696FFFC2099CD521E4BAA6F950A3 /* DimensionsPickerView.framework */,
+				D5D4484DC0304330555C475BE6172D57 /* Pods_DimensionsPickerView_Example.framework */,
+				3A6EBDDBE7CD5154D05FCF6708928095 /* Pods_DimensionsPickerView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		571005217B13894D65A5B4AC3D86BDBF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6663B86440FA5802F00E0EE1CB17096A /* DimensionsPickerView.modulemap */,
+				59A4ABD121B8B7E37B6AD539EEA488DA /* DimensionsPickerView.xcconfig */,
+				2EC7D4095759D6F4D0BC246473AC6A07 /* DimensionsPickerView-dummy.m */,
+				D95C349C49A4AE537CD000DD0E877DAE /* DimensionsPickerView-Info.plist */,
+				0FFA089A27FB25879AE675190F4547A6 /* DimensionsPickerView-prefix.pch */,
+				262C681D8F5F1BAE6FC46A0E7DC4742C /* DimensionsPickerView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DimensionsPickerView";
+			sourceTree = "<group>";
+		};
+		9431E05634804A7ADA9830C17D89909E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F130282705D3D0609DE82EE745062786 /* DimensionsPickerView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9F3C3E252D110EB24FA396657E0B400B /* Pods-DimensionsPickerView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D618D83E6C8911683A10794697672012 /* Pods-DimensionsPickerView_Example.modulemap */,
+				A502B78C1038F09C4CB9C6411D8021FB /* Pods-DimensionsPickerView_Example-acknowledgements.markdown */,
+				D531B161916C02C45FF4F061F1E3000C /* Pods-DimensionsPickerView_Example-acknowledgements.plist */,
+				A28BFEAFFF411C404ECB703E77340EC5 /* Pods-DimensionsPickerView_Example-dummy.m */,
+				BACF79D77C8C5BF5A44DD66B538FD35C /* Pods-DimensionsPickerView_Example-frameworks.sh */,
+				FE82F6B84D0F0FAA2E26044B181BE19D /* Pods-DimensionsPickerView_Example-Info.plist */,
+				C38B5FCC8A4905556975BCB0A7E605ED /* Pods-DimensionsPickerView_Example-umbrella.h */,
+				C4DFFB309B19C2F1664D75D456B94742 /* Pods-DimensionsPickerView_Example.debug.xcconfig */,
+				362BDF61B163B393367CD7492231B337 /* Pods-DimensionsPickerView_Example.release.xcconfig */,
+			);
+			name = "Pods-DimensionsPickerView_Example";
+			path = "Target Support Files/Pods-DimensionsPickerView_Example";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				9431E05634804A7ADA9830C17D89909E /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				25F59A4E70DF39E57CE3424625B23905 /* Products */,
+				E4EAFBCD2A22595CA264A9DCBFDCB42D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4EAFBCD2A22595CA264A9DCBFDCB42D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C3E252D110EB24FA396657E0B400B /* Pods-DimensionsPickerView_Example */,
+				1ABF464FA0FABEEC1A6BFA7A915F4AB9 /* Pods-DimensionsPickerView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F130282705D3D0609DE82EE745062786 /* DimensionsPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				E40F3D1A2374116E00E38EC3 /* DimensionsPickerView.swift */,
+				23874798560936D4EE5688F70669D963 /* Pod */,
+				571005217B13894D65A5B4AC3D86BDBF /* Support Files */,
+			);
+			name = DimensionsPickerView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2313DB2391F4D154EB111D1B53676D4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C381C90233959F8255FD2FBD3D500D /* Pods-DimensionsPickerView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85B13E64B3DA89832A11D7C63E1BC3BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341C9EE2327538EEA719409F98917D41 /* DimensionsPickerView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F595A576571DB31AEDEFB95E4A879D9E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D6AA6C06419B4DDDCA6C2747FCC756E /* Pods-DimensionsPickerView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		15BE4E41423CD02786EF3A66F4B3ACE1 /* DimensionsPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A99BFC3117A8135D2AE05E2AF986278D /* Build configuration list for PBXNativeTarget "DimensionsPickerView" */;
+			buildPhases = (
+				85B13E64B3DA89832A11D7C63E1BC3BB /* Headers */,
+				138C9AA33A1487A0D60F636BE62F7CB9 /* Sources */,
+				ABC9CFCE7D6C0A50DD5555BBA4C44A19 /* Frameworks */,
+				7D4800955824CC7DC4689CA1A468D470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DimensionsPickerView;
+			productName = DimensionsPickerView;
+			productReference = 5D4A696FFFC2099CD521E4BAA6F950A3 /* DimensionsPickerView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84884B2350016C35E8C79EE0B9C0E836 /* Pods-DimensionsPickerView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5649BDB395794C4A44D17211B1C9BA9 /* Build configuration list for PBXNativeTarget "Pods-DimensionsPickerView_Tests" */;
+			buildPhases = (
+				F595A576571DB31AEDEFB95E4A879D9E /* Headers */,
+				D9CD9E917780764CA4E3D540A7394C9A /* Sources */,
+				AB297F61AB0C98211E56FEBC28D79F8D /* Frameworks */,
+				177C61389B43D1D6A9332030E453E456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BA6D5D5F1879A4561158B5D96EC5DDC /* PBXTargetDependency */,
+			);
+			name = "Pods-DimensionsPickerView_Tests";
+			productName = "Pods-DimensionsPickerView_Tests";
+			productReference = 3A6EBDDBE7CD5154D05FCF6708928095 /* Pods_DimensionsPickerView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8804CB04A53BDBF840BDB398F4D36675 /* Pods-DimensionsPickerView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365E35D463E21C77AB632B0D8A01DD0D /* Build configuration list for PBXNativeTarget "Pods-DimensionsPickerView_Example" */;
+			buildPhases = (
+				2313DB2391F4D154EB111D1B53676D4B /* Headers */,
+				5FC7623106E64FC3566D45B367AA196B /* Sources */,
+				DD588A5270BA7A9AD1915487FA9F06D3 /* Frameworks */,
+				873C52179DA3543FE4144CEE99D6B1A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9E63A76DF471C8A2DD1F5C0AEE340D3 /* PBXTargetDependency */,
+			);
+			name = "Pods-DimensionsPickerView_Example";
+			productName = "Pods-DimensionsPickerView_Example";
+			productReference = D5D4484DC0304330555C475BE6172D57 /* Pods_DimensionsPickerView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 25F59A4E70DF39E57CE3424625B23905 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15BE4E41423CD02786EF3A66F4B3ACE1 /* DimensionsPickerView */,
+				8804CB04A53BDBF840BDB398F4D36675 /* Pods-DimensionsPickerView_Example */,
+				84884B2350016C35E8C79EE0B9C0E836 /* Pods-DimensionsPickerView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		177C61389B43D1D6A9332030E453E456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D4800955824CC7DC4689CA1A468D470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		873C52179DA3543FE4144CEE99D6B1A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		138C9AA33A1487A0D60F636BE62F7CB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD48318DD39D798D35B82C2564C00FF9 /* DimensionsPickerView-dummy.m in Sources */,
+				E40F3D1B2374116E00E38EC3 /* DimensionsPickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC7623106E64FC3566D45B367AA196B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABA999A45897F12F44DA1734E2355F6 /* Pods-DimensionsPickerView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9CD9E917780764CA4E3D540A7394C9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609142543F4B783ECC2BC2A8E0CBB3AC /* Pods-DimensionsPickerView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BA6D5D5F1879A4561158B5D96EC5DDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DimensionsPickerView_Example";
+			target = 8804CB04A53BDBF840BDB398F4D36675 /* Pods-DimensionsPickerView_Example */;
+			targetProxy = EA1F9B08F909D6945BF67EF74C182E95 /* PBXContainerItemProxy */;
+		};
+		D9E63A76DF471C8A2DD1F5C0AEE340D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DimensionsPickerView;
+			target = 15BE4E41423CD02786EF3A66F4B3ACE1 /* DimensionsPickerView */;
+			targetProxy = CE12310B0EE044E2A72C96513F1C8076 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39464003B8EAE39F8C10EAB147DE826B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BDC8497BDA3DB333387F48FB5CFF264 /* Pods-DimensionsPickerView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DimensionsPickerView_Tests/Pods-DimensionsPickerView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DimensionsPickerView_Tests/Pods-DimensionsPickerView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		43B4D78E76986B63CEF90EA2D6CC90BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59A4ABD121B8B7E37B6AD539EEA488DA /* DimensionsPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DimensionsPickerView/DimensionsPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DimensionsPickerView/DimensionsPickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DimensionsPickerView/DimensionsPickerView.modulemap";
+				PRODUCT_MODULE_NAME = DimensionsPickerView;
+				PRODUCT_NAME = DimensionsPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4F10BE0BCB99B08675920B118D36CAF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 362BDF61B163B393367CD7492231B337 /* Pods-DimensionsPickerView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DimensionsPickerView_Example/Pods-DimensionsPickerView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DimensionsPickerView_Example/Pods-DimensionsPickerView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51263E1A415824A9ACCAA00F5E7A90FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC08BF29438BF3520CFDAF3CE73BBA4 /* Pods-DimensionsPickerView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DimensionsPickerView_Tests/Pods-DimensionsPickerView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DimensionsPickerView_Tests/Pods-DimensionsPickerView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8442B4410C4D7EA4960B2972DCA21FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4DFFB309B19C2F1664D75D456B94742 /* Pods-DimensionsPickerView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DimensionsPickerView_Example/Pods-DimensionsPickerView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DimensionsPickerView_Example/Pods-DimensionsPickerView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B2CF406BBA4588493B973A5A6533C77A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59A4ABD121B8B7E37B6AD539EEA488DA /* DimensionsPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DimensionsPickerView/DimensionsPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DimensionsPickerView/DimensionsPickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DimensionsPickerView/DimensionsPickerView.modulemap";
+				PRODUCT_MODULE_NAME = DimensionsPickerView;
+				PRODUCT_NAME = DimensionsPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		365E35D463E21C77AB632B0D8A01DD0D /* Build configuration list for PBXNativeTarget "Pods-DimensionsPickerView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8442B4410C4D7EA4960B2972DCA21FFC /* Debug */,
+				4F10BE0BCB99B08675920B118D36CAF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A99BFC3117A8135D2AE05E2AF986278D /* Build configuration list for PBXNativeTarget "DimensionsPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B4D78E76986B63CEF90EA2D6CC90BE /* Debug */,
+				B2CF406BBA4588493B973A5A6533C77A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5649BDB395794C4A44D17211B1C9BA9 /* Build configuration list for PBXNativeTarget "Pods-DimensionsPickerView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51263E1A415824A9ACCAA00F5E7A90FB /* Debug */,
+				39464003B8EAE39F8C10EAB147DE826B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

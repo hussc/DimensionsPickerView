@@ -1,0 +1,6 @@
+framework module DimensionsPickerView {
+  umbrella header "DimensionsPickerView-umbrella.h"
+
+  export *
+  module * { export * }
+}

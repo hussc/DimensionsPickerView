@@ -1,0 +1,16 @@
+PODS:
+  - DimensionsPickerView (0.1.0)
+
+DEPENDENCIES:
+  - DimensionsPickerView (from `../`)
+
+EXTERNAL SOURCES:
+  DimensionsPickerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DimensionsPickerView: 7afa43f95ec2156f6710182f6ff5f8547b0597e2
+
+PODFILE CHECKSUM: c3fdb4aaa27bf36299234cb8ab04d5647eddbfce
+
+COCOAPODS: 1.7.4

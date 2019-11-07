@@ -1,0 +1,6 @@
+framework module Pods_DimensionsPickerView_Example {
+  umbrella header "Pods-DimensionsPickerView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
