@@ -67,7 +67,7 @@ import UIKit
             
             // map the values into strings
             if let valueFormatter = self.valueToStringFormatter {
-                texts = trimmed.map { valueFormatter(trimmed.index(of: $0)!, $0) }
+                texts = trimmed.map { valueFormatter(trimmed.firstIndex(of: $0)!, $0) }
             } else {
                 texts = trimmed.map {
                     if let value = $0 {
@@ -81,13 +81,15 @@ import UIKit
             for (index, textField) in valuesTextFields.enumerated() {
                 textField.text = texts[index]
             }
+            
+            sendActions(for: .valueChanged)
         } get {
             // return the texts of the text fields mapped to double values :)
             let texts = valuesTextFields.map { $0.text }
             let values: [Double?]
             
             if let valueFormatter = self.stringToValueFormatter {
-                values = texts.map { valueFormatter(texts.index(of: $0)!, $0) }
+                values = texts.map { valueFormatter(texts.firstIndex(of: $0)!, $0) }
             } else {
                 values = texts.map {
                     if let value = $0 {
@@ -155,9 +157,32 @@ import UIKit
      */
     open var stringToValueFormatter: ((Int, String?) -> Double?)?
     
-    open var textFieldConfigureBlock: ((Int, UITextField) -> Void)?
-    open var labelConfigureBlock: ((Int, UILabel) -> Void)?
-    open var pickerFieldConfigureBlock: ((UITextField) -> Void)?
+    
+    open var textFieldConfigureBlock: ((Int, UITextField) -> Void)? {
+        didSet {
+            for (index, field) in valuesTextFields.enumerated() {
+                textFieldConfigureBlock?(index, field)
+            }
+        }
+    }
+    
+    
+    open var labelConfigureBlock: ((Int, UILabel) -> Void)? {
+        didSet {
+            for (index, label) in labels.enumerated() {
+                labelConfigureBlock?(index, label)
+            }
+        }
+    }
+    
+    
+    open var pickerFieldConfigureBlock: ((UITextField) -> Void)? {
+        didSet {
+            if let field = unitTextField {
+                pickerFieldConfigureBlock?(field)
+            }
+        }
+    }
 
     
     public var numberFormatter: NumberFormatter = {
@@ -255,16 +280,37 @@ import UIKit
     }
     
     fileprivate func customizeNumberField(textField: UITextField, for index: Int){
+        textField.font = UIFont(name: "AvenirNext-Medium", size: 15)
+        textField.textAlignment = .center
+        textField.setContentCompressionResistancePriority(.required, for: .horizontal)
+        textField.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        textField.keyboardType = .numberPad
+        
         self.textFieldConfigureBlock?(index, textField)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(textFieldTextDidChange(notification:)), name: UITextField.textDidChangeNotification, object: textField)
         textField.delegate = self
     }
     
     fileprivate func customizePickerField(textField: UITextField){
+        textField.textAlignment = .center
+        textField.font = UIFont(name: "AvenirNext-Medium", size: 15)
+        textField.isEnabled = false
+        
         self.pickerFieldConfigureBlock?(textField)
+        
         textField.delegate = self
     }
     
     fileprivate func customizeLabel(label: UILabel, for index: Int){
+        label.text = "x"
+        label.textAlignment = .center
+        label.font = UIFont(name: "AvenirNext-Medium", size: 15)
+        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        
+        label.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        
         self.labelConfigureBlock?(index, label)
     }
     
@@ -289,7 +335,7 @@ import UIKit
         for i in 0..<(count + (count - 1)) {
             if i == 0 || i % 2 == 0 {
                 // put a textField
-                let textField = self.buildUITextField()
+                let textField = self.buildValueTextField()
                 
                 // and how to compute the i? we did it :)
                 customizeNumberField(textField: textField, for: max(0, i - 1))
@@ -315,13 +361,28 @@ import UIKit
         customizePickerField(textField: textField)
         pickersStackView.addArrangedSubview(textField)
     }
+    
+    //MARK: Building Elements
+    open func buildValueTextField() -> UITextField {
+        let textField = UITextField()
+        return textField
+    }
+    
+    open func buildPickerTextField() -> UITextField {
+        let textField = UITextField()
+        return textField
+    }
+    
+    open func buildLabel() -> UILabel {
+        let label = UILabel()
+        return label
+    }
 }
 
 //MARK: UITextField Delegate
 extension DimensionsPickerView: UITextFieldDelegate {
-    
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print(values)
+        sendActions(for: .valueChanged)
         
         if textField == unitTextField {
             // return. just ended editing.
@@ -354,6 +415,7 @@ extension DimensionsPickerView: UITextFieldDelegate {
 
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
+        
         // always allow editing for picker text field
         if textField == unitTextField {
             return true
@@ -365,11 +427,7 @@ extension DimensionsPickerView: UITextFieldDelegate {
             return true
         }
         
-        
-
-        // Check for invalid input characters
-
-        // Length Processing
+    
         // Need to convert the NSRange to a Swift-appropriate type
         if let text = textField.text, let range = Range(range, in: text) {
 
@@ -385,45 +443,13 @@ extension DimensionsPickerView: UITextFieldDelegate {
         // Allow text change
         return true
     }
-}
-
-
-//MARK: Builder
-extension DimensionsPickerView {
-    open func buildUITextField() -> UITextField {
-        let textField = UITextField()
-        // maybe we want to add some customization here?
-
-        textField.font = UIFont(name: "AvenirNext-Medium", size: 15)
-        textField.textAlignment = .center
-        textField.setContentCompressionResistancePriority(.required, for: .horizontal)
-        textField.setContentHuggingPriority(.defaultLow, for: .horizontal)
-        textField.keyboardType = .numberPad
-        textField.backgroundColor = UIColor(white: 0.94, alpha: 1)
-
-        return textField
-    }
     
-    open func buildPickerTextField() -> UITextField {
-        let textField = UITextField()
-        textField.placeholder = "unit"
-        textField.textAlignment = .center
-        textField.font = UIFont(name: "AvenirNext-Medium", size: 15)
-        textField.isEnabled = false
-
-        return textField
-    }
-    
-    open func buildLabel() -> UILabel {
-        let label = UILabel()
-        label.text = "x"
-        label.textAlignment = .center
-        label.font = UIFont(name: "AvenirNext-Medium", size: 15)
-        label.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
-        label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-
-        return label
+    @objc func textFieldTextDidChange(notification: NSNotification){
+        if let textField = notification.object as? UITextField {
+            if valuesTextFields.contains(textField){
+                self.sendActions(for: .valueChanged)
+            }
+        }
     }
 }
 
