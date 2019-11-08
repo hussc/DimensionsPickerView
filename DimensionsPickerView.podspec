@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DimensionsPickerView'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A Simple Highly Customizable Dimensions Picker ( Weight, Size, Speed, ... ) view for iOS'
 
 # This description is used to generate tags and improve search results.
@@ -27,11 +27,11 @@ with support for a wide range of unit selection, like:
                        DESC
 
   s.homepage         = 'https://github.com/hussc/DimensionsPickerView'
-#  s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://www.dropbox.com/s/o58pkp1ehnzqrzn/Simulator%20Screen%20Shot%20-%20My%20iPhone%20SE%20-%202019-11-08%20at%2007.12.30.png', 'https://www.dropbox.com/s/jrstsrr5pm9gvhq/Simulator%20Screen%20Shot%20-%20My%20iPhone%20SE%20-%202019-11-08%20at%2007.12.34.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hussc' => 'hus.sc@aol.com' }
   s.source           = { :git => 'https://github.com/hussc/DimensionsPickerView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+   s.social_media_url = 'https://facebook.com/hussc'
 
   s.ios.deployment_target = '10.0'
   s.swift_version  = '5.0'
