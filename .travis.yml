@@ -2,8 +2,8 @@
 # * https://www.objc.io/issues/6-build-tools/travis-ci/
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode11.0
+osx_image: xcode11.2
 language: objective-c
 xcode_workspace: Example/DimensionsPickerView.xcworkspace
 xcode_scheme: DimensionsPickerView-Example
-xcode_sdk: iphonesimulator13.0
+xcode_sdk: platform=iOS Simulator,OS=10.1,name=iPhone 8
