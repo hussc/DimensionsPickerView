@@ -27,7 +27,7 @@ with support for a wide range of unit selection, like:
                        DESC
 
   s.homepage         = 'https://github.com/hussc/DimensionsPickerView'
-  s.screenshots     = 'https://www.dropbox.com/s/o58pkp1ehnzqrzn/Simulator%20Screen%20Shot%20-%20My%20iPhone%20SE%20-%202019-11-08%20at%2007.12.30.png', 'https://www.dropbox.com/s/jrstsrr5pm9gvhq/Simulator%20Screen%20Shot%20-%20My%20iPhone%20SE%20-%202019-11-08%20at%2007.12.34.png'
+  s.screenshots     = 'https://i.postimg.cc/G2JhLHCB/Simulator-Screen-Shot-My-i-Phone-SE-2019-11-08-at-07-12-34.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hussc' => 'hus.sc@aol.com' }
   s.source           = { :git => 'https://github.com/hussc/DimensionsPickerView.git', :tag => s.version.to_s }
